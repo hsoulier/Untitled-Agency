@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+@font-face {
+  font-family: "Hanson";
+  src: url("fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
+    url("fonts/MonumentExtended-Ultrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 16px;
+}
+
+.stroke-line {
+  -webkit-text-stroke: 2px #e1f1ff;
+  color: transparent;
+
+  &-thin {
+    -webkit-text-stroke: 1px #e1f1ff;
+    color: transparent;
+  }
+}
+
+.title-agency {
+  font-size: 12vw;
+  @apply absolute top-1/12 left-0 right-0 text-center font-typeface leading-1/2 mx-auto;
+
+  & .span-agency {
+    margin-top: -1rem;
+  }
+  & span {
+    line-height: 0;
+  }  
+}
+
+@media (min-width: 992px) {
+    .title-agency {
+      font-size: 15vw;
+    }
+
+    .title-agency .span-agency {
+      margin-top: -6rem;
+    }
+  }
