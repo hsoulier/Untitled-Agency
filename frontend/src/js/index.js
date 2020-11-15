@@ -1,4 +1,5 @@
 // import "./threeAnimation.js"
+import "../styles/main.css"
 import { gsap } from "gsap"
 
 const menuBtn = document.querySelector(".menu-btn")

@@ -2,7 +2,7 @@ const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     app: "./src/js/index.js",
     threejs: "./src/js/threeAnimation.js",
@@ -13,9 +13,7 @@ module.exports = {
     filename: "js/[name].js",
   },
 
-  plugins: [
-    new MiniCssExtractPlugin({ filename: "styles/index.css" }),
-  ],
+  plugins: [new MiniCssExtractPlugin({ filename: "styles/index.css" })],
   module: {
     rules: [
       {
@@ -34,8 +32,16 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|otf|ttf|svg)$/,
-        use: ["url-loader?limit=10000&name=./styles/fonts/[name].[ext]"],
+        use: ["url-loader?limit=10000&name=./assets/fonts/[name].[ext]"],
       },
     ],
+  },
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 200,
+    poll: 800,
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, "./dist"),
   },
 }

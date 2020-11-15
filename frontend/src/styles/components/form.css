@@ -1,0 +1,27 @@
+.login-form {
+  div {
+    @apply relative;
+    & + div {
+      @apply mt-8;
+    }
+  }
+  input {
+    width: 100%;
+  }
+  label {
+    @apply absolute bottom-0 left-0 pointer-events-none;
+    transition: transform 0.1s ease;
+  }
+  input:focus ~ label,
+  input:not(:placeholder-shown):invalid ~ label,
+  input:valid ~ label {
+    @apply transform -translate-y-full;
+  }
+  button {
+    @apply mt-4 py-1;
+    transition: all 0.25s ease-in;
+    &:hover {
+      @apply bg-palette-white text-palette-black;
+    }
+  }
+}
