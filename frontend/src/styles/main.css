@@ -4,3 +4,11 @@
 @import "./components/typography";
 @import "./components/navbar";
 @import "./components/form";
+@import "./components/team";
+@import "./components/other";
+@import "./components/animations";
+
+.debug,
+.debug > * {
+  border: 1px solid grey;
+}

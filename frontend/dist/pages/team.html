@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untiled Agency</title>
+    <script src="./../js/app.js" defer></script>
+    <script src="./../js/team.js" defer></script>
+    <script>
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    </script>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+
+  <body class="w-screen h-screen text-palette-white bg-black overflow-x-hidden relative">
+    <header class="w-full">
+      <nav class="navbar px-8 flex justify-between items-center md:container">
+        <div class="relative z-50 logo font-typeface tracking-ext text-4xl">
+          <a href="./" title="Accueil">
+            <span class="stroke-line">u</span>
+            <span>a</span>
+          </a>
+        </div>
+        <button class="focus:outline-none menu-btn md:hidden relative z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-palette-white fill-current" viewBox="0 0 36 36"
+            height="30" width="30">
+            <rect x="0" y="0" height="3" width="36" class="line-1" />
+            <rect x="0" y="14" height="3" width="36" class="line-2" />
+            <rect x="0" y="27" height="3" width="36" class="line-3" />
+          </svg>
+        </button>
+        <ul
+          class="nav-links opacity-0 md:opacity-100 z-n1 md:z-auto absolute top-0 left-0 w-full bg-palette-yellow md:w-auto md:static md:bg-transparent text-current h-full md:inline-flex gap-8 font-sans text-xl">
+          <li class="nav-item">
+            <a href="./projects.html">
+              <span>1
+              </span>solutions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./team.html">
+              <span>2
+              </span>équipe
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html">
+              <span>3
+              </span>contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./account.html">
+              <span>4
+              </span>espace
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="test"></div>
+    <div class="team">
+      <h1>Une équipe de bourreaux</h1>
+      <h2>Prêt à tous pour ses clients</h2>
+      <ul class="team__container">
+        <li class="team__member">
+          <h2>Ali Youssouf</h2>
+          <img src="./../assets/img/ali.jpg" alt="Ali Youssouf">
+          <p></p>
+        </li>
+        <li class="team__member">
+          <h2>Hippolyte Soulier</h2>
+          <img src="./../assets/img/hippo.jpg" alt="Hippolyte Soulier">
+          <p></p>
+        </li>
+        <li class="team__member">
+          <h2>Hugo Hébrard</h2>
+          <img src="./../assets/img/hugo.jpg" alt="Hugo Hébrard">
+          <p></p>
+        </li>
+        <li class="team__member">
+          <h2>Jessy Rivas</h2>
+          <img src="./../assets/img/jessy.jpg" alt="Jessy Rivas">
+          <p></p>
+        </li>
+        <li class="team__member">
+          <h2>Lelio Ruelle-Chaboud</h2>
+          <img src="./../assets/img/lelio.jpg" alt="Lelio Ruelle-Chaboud">
+          <p></p>
+        </li>
+        <li class="team__member">
+          <h2>Mathis Jarno</h2>
+          <img src="./../assets/img/mathis.jpg" alt="Mathis Jarno">
+          <p></p>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>

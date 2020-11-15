@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Hanson";
   src: url("../assets/fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
-       url("../assets/fonts/MonumentExtended-Ultrabold.woff") format("woff");
+    url("../assets/fonts/MonumentExtended-Ultrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -32,15 +32,15 @@ body {
   }
   & span {
     line-height: 0;
-  }  
+  }
 }
 
 @media (min-width: 992px) {
-    .title-agency {
-      font-size: 15vw;
-    }
-
-    .title-agency .span-agency {
-      margin-top: -6rem;
-    }
+  .title-agency {
+    font-size: 15vw;
   }
+
+  .title-agency .span-agency {
+    margin-top: -6rem;
+  }
+}

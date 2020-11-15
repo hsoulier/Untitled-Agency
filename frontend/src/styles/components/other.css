@@ -1,0 +1,21 @@
+.tea {
+  --secondary: #33406f;
+}
+
+.tea #teabag {
+  transform-origin: top center;
+  transform: rotate(3deg);
+  animation: swing 2s infinite;
+}
+
+.tea #steamL {
+  stroke-dasharray: 13;
+  stroke-dashoffset: 13;
+  animation: steamLarge 2s infinite;
+}
+
+.tea #steamR {
+  stroke-dasharray: 9;
+  stroke-dashoffset: 9;
+  animation: steamSmall 2s infinite;
+}

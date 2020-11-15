@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     app: "./src/js/index.js",
     threejs: "./src/js/threeAnimation.js",
-    // file3: "./src/file3.js",
+    team: "./src/js/team.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -29,6 +29,6 @@ module.exports = {
     poll: 800,
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "./dist/pages"),
+    contentBase: path.resolve(__dirname, "./dist"),
   },
 }
